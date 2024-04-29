@@ -183,7 +183,6 @@ function partTwo(lines) {
     }
     return a.type - b.type;
   });
-  console.log(sorted);
   const awardPrice = sorted.map((hands, index) => hands.bid * (index + 1));
   console.log(awardPrice.reduce((a, b) => a + b, 0));
 }
